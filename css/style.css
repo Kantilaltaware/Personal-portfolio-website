@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+:root {
+    --main-bg-color: aqua;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.logo img{
+    width: 140px;
+    padding: 0 23px;
+} 
+nav{
+    display: flex;
+}
+nav ul{
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 25px;
+}
+nav ul li a{
+    font-family:'Oswald', sans-serif ;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+    color: rgb(50, 14, 211);
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 400px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 0 250px;
+    padding: 0 15px;
+}
+.details{
+    margin-left: 8%;
+    margin-top: 16%;
+}
+.details h1{
+    font-size: 50px;
+    color: #49fd08;
+    font-family: 'Pushster', cursive;
+}
+span{
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(234, 4, 4);
+    font-size: 25px;
+    margin: 0 4px;
+
+}    
+.details a{
+    background-color: #212121;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.details p{
+    color: #555;
+    margin: 5px;
+}
+main{
+    min-height: calc(100vh - 6vh - 80px);
+}
+.container{
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}
+.container img{
+    height: 90%;
+    width: 65%;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    /* transform: translateX(-50%); */
+} 
+container .image{
+    right: 30px;
+}
+.container .shape{
+    width: 60%;
+}
+.container:hover .image{
+    bottom: -1px;
+}
+.container:hover .shape{
+    bottom: 40px;
+ }
+ .container:hover .jay{
+     bottom: -2px;
+ }
+.container .jay{
+    margin: -330px 19px;
+}
+footer{
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family:'Oswald', sans-serif ;
+}

@@ -1,0 +1,13 @@
+.footer-text{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.btn{
+    margin: 27px -245px;
+    width: 75px;
+    height: 30px;
+    background-color: var(--main-bg-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
