@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="entire information about myself">
+    <meta name="keywords" content="HTML CSS JS">
     <title>My Personal Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+    <div class="progress"></div>
     <header>
         <nav>
             <div class="logo">
                 <img src="/img/logo.png" width="100px" alt="logo image">
-
             </div>
             <ul>
                 <li> <a href="home.html">Home</a></li>
@@ -23,28 +27,47 @@
                 <li> <a href="about.html">About</a></li>
             </ul>
             <div class="search">
-                <input type="text" name="" id="" placeholder="Search Here">
+                <a href="#"> <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" name="search" id="search" placeholder="Search Here" height="200px"></a>
+                <button class="btn">Search</button>
             </div>
-            <button class="btn">Search</button>
         </nav>
     </header>
     <main>
-
         <div class="details">
-            <h5>Hii, Everyone Myself</h5>
-            <h1>Kantilal Taware</h1><br>
-            <span>	&#128681  </span><span>Shivpremi</span><span>&#128681</span><br>
-            <p>This is my personal portfolio website <br>to showes my all details <br>Now, I am studying in second year of <br> Mechanical Department and <br>I trying to learn Web Developement</p>
-            <a href="#" class="more">More Info</a>
+            <section>
+                <h5>Hii, Everyone Myself</h5>
+                <h1>Kantilal Taware</h1><br>
+                <span> &#128681 </span><span>Shivpremi</span><span>&#128681</span><br>
+                <p>This is my personal portfolio website <br>to showes my all details <br>Now, I am studying in second
+                    year
+                    of <br> Mechanical Department and <br>I trying to learn Web Developement</p>
+                <a href="#" class="more">More Info</a>
+            </section>
         </div>
-        <div class="container">
-            <img src="/img/shape.png" class="shape">
-            <img src="/img/maharaj.png" class="image">
-            <img src="/img/Shivray.png" class="jay" alt="Maharaj image">
-        </div>
-
-
+        <aside>
+            <div class="container">
+                <img src="/img/shape.png" class="shape">
+                <img src="/img/maharaj.png" class="image">
+                <img src="/img/Shivray.png" class="jay" alt="Chhatrapati Shivaji Maharaj image">
+            </div>
+        </aside>
     </main>
+    <div class="comment">
+        <h3>Comments</h3>
+        <form action="backend.Node.js" class="comment-box">
+            <label for="myname">Name
+                <input type="text" id="myname" name="myname" placeholder="Full Name....">
+            </label>
+            <label for="myemail">Email
+                <input type="email" id="myemail" name="myemail" placeholder="Email Adress....">
+            </label>
+            <textarea name="comment" cols="30" rows="10" placeholder="Type Your Comments....."></textarea>
+            <input type="submit" value="Submit Now" class="submit-btn">
+            <input type="reset" value="Reset Now" class="reset-btn">
+        </form>
+    </div>
+
     <footer class="footer-text">
         copyright &copy; Myportfolio.com
     </footer>
